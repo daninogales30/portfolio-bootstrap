@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="website icon" href="imgs/code-solid.svg">
-    <title>Portfolios de dani - Desarrollador web</title>
+    <title>Portfolio de Dani - Desarrollador Web</title>
 </head>
 
-<body class="bg-dark text-white">
-    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+<body class="bg-dark text-white container">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#soydani">
-                <img src="/imgs/logo.jpg" alt="Foto logo" width="60px" class="rounded-circle">
+                <img src="imgs/logo.jpg" alt="Foto logo" width="60px" class="rounded-circle">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
@@ -27,220 +31,168 @@
                         <a class="nav-link" href="#sobremii">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mailto:danielnogalesmateos2005@gmail·com">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container mt-5 pt-5">
-        <section id="soydani" class="text-center my-5">
-            <h1 class=" fw-bold">Soy Dani!!
-                <img src="/imgs/logo.jpg" alt="Foto logo" width="60px" class="rounded-circle">
-            </h1>
-            <h2 class="mb-5 fw-bold">Desarrollador web <i class="fas fa-laptop-code"></i></h2>
-            <p>Soy Daniel Nogales Mateos y me encanta el desarrollo web y espero que mi perfil sea el adecuado·</p>
-            <div class="d-flex justify-content-center gap-2">
-                <a href="https://www·instagram·com/daniiinogaleees/" class="btn btn-outline-light"><i
-                        class="fab fa-instagram"></i> Instagram</a>
-                <a href="#" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="https://github·com/daninogales30" class="btn btn-outline-light"><i class="fab fa-github"></i>
-                    Github</a>
-                <a href="docs/Curriculum Daniel Noales Mateos (2)·pdf" download class="btn btn-outline-light"><i
-                        class="fas fa-file"></i> Descargar CV</a>
-            </div>
-        </section>
+    <!-- Sección Hero -->
+    <section id="soydani" class="text-center my-5 pt-5">
+        <h1 class="fw-bold">¡Soy Dani!</h1>
+        <img src="imgs/logo.jpg" alt="Foto logo" width="100px" class="rounded-circle my-3">
+        <h2 class="mb-4 fw-bold">Desarrollador Web <i class="fas fa-laptop-code"></i></h2>
+        <p class="lead">Soy Daniel Nogales Mateos, un apasionado del desarrollo web con ganas de aprender y crecer en este campo.</p>
+        <div class="d-flex justify-content-center gap-2">
+            <a href="https://www.instagram.com/daniiinogaleees/" class="btn btn-outline-light"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/daninogales30" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
+            <a href="docs/Curriculum_Daniel_Nogales_Mateos.pdf" download class="btn btn-outline-light"><i class="fas fa-file"></i> Descargar CV</a>
+        </div>
+    </section>
 
-        <section id="proyectos" class="my-5">
-            <h2 class="text-center mb-5 fw-bold">Proyectos <i class="fas fa-book"></i></h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card bg-secondary text-white mb-3">
-                        <img src="imgs/proyecto django.png" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Proyecto Juego Tierra Media</h5>
-                            <p class="card-text">Este proyecto esta desarrollado con Django, framework de Python</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Leer
-                                más <i class="fas fa-angles-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content bg-dark">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Proyecto Juego Tierra Media</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    Proyecto con 3 compañeros de clase· Trabajo sobre un juego de rol creado con Django,
-                                    usando templates con HTML y estilado con CSS· Proyecto trabajado en clase·
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="https://github·com/daninogales30/juego_tierra_media_django"
-                                        class="btn btn-primary">Ver en GitHub</a>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-secondary text-white mb-3">
-                        <img src="imgs/proyecto cliente.png" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Proyecto Página web</h5>
-                            <p class="card-text">Este proyecto es una página web desarrollada con HTML, CSS Y Javascript
-                            </p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Leer
-                                más <i class="fas fa-angles-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="myModal2">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content bg-dark">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Proyecto Página web</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-
-                            <div class="modal-body">
-                                Proyecto realizado en clase con 2 compañeros más, sobre una tienda online de
-                                electrónica, sin base de datos, creada solamente usando HTML, CSS y Javascript, usando
-                                animaciones y localStorage para guardar registro de la cesta de compra·
-                            </div>
-
-                            <div class="modal-footer">
-                                <a href="https://github·com/daninogales30/proyecto_cliente" class="btn btn-primary">Ver
-                                    en GitHub</a>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-secondary text-white mb-3">
-                        <img src="imgs/proyecto boot.png" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Proyecto Página web Restaurante con Bootstrap5</h5>
-                            <p class="card-text">Este proyecto es una página web desarrollada con HTML y su diseño con bootstrap</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">Leer
-                                más <i class="fas fa-angles-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="myModal3">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content bg-dark">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Proyecto Página web Restaurante con Bootstrap5</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-
-                            <div class="modal-body">
-                                Proyecto realizado de manera indiviudal, simulando una página estática con HTML y su diseño con Bootstrap5, para conocer un poco más su funcionamiento·
-                            </div>
-
-                            <div class="modal-footer">
-                                <a href="https://github·com/daninogales30/proyecto_bootstrap" class="btn btn-primary">Ver
-                                    en GitHub</a>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-
-                        </div>
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="my-5">
+        <h2 class="text-center mb-5 fw-bold">Proyectos <i class="fas fa-book"></i></h2>
+        <div class="row justify-content-center">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-white">
+                    <img src="imgs/proyecto django.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Juego Tierra Media</h5>
+                        <p class="card-text">Proyecto desarrollado con Django, HTML y CSS.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto1">Leer más</a>
                     </div>
                 </div>
             </div>
+            <!-- Proyecto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-white">
+                    <img src="imgs/proyecto cliente.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Página Web</h5>
+                        <p class="card-text">Página web desarrollada con HTML, CSS y JavaScript.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto2">Leer más</a>
+                    </div>
+                </div>
             </div>
-        </section>
+            <!-- Proyecto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-white">
+                    <img src="imgs/proyecto boot.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Restaurante con Bootstrap</h5>
+                        <p class="card-text">Página web estática desarrollada con Bootstrap.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto3">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="lenguajes" class="my-5">
-            <h2 class="text-center mb-5 fw-bold">Lenguajes <i class="fa-solid fa-square-binary"></i></h2>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-5">
-                    <div class="card bg-secondary text-white mb-3 p-2">
-                        <img src="imgs/lenguajes_1.png" class="card-img-top rounded" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">FRONTED</h5>
-                            <p class="card-text">HTML, CSS Y Javascript</p>
+    <!-- Sección de Experiencia -->
+    <section id="experiencia" class="my-5">
+        <h2 class="text-center mb-5 fw-bold">Experiencia <i class="fas fa-wand-magic-sparkles"></i></h2>
+        <div class="list-group">
+            <div class="list-group-item list-group-item-action bg-secondary text-white p-4">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Prácticas en IES Romero Vargas</h5>
+                    <small>17-03-2025</small>
+                </div>
+                <p class="mb-2">Experiencia como programador en prácticas en el instituto.</p>
+            </div>
+            <div class="list-group-item list-group-item-action bg-secondary text-white p-4">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Gestión de Bases de Datos</h5>
+                    <small>18-06-2024</small>
+                </div>
+                <p class="mb-2">Ayuda en la gestión de bases de datos para una empresa local.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Artículos -->
+    <section id="articulos" class="my-5">
+        <h2 class="text-center mb-5 fw-bold">Artículos <i class="fas fa-newspaper"></i></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Artículo 1</h5>
+                        <p class="card-text">Descripción breve del artículo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Artículo 2</h5>
+                        <p class="card-text">Descripción breve del artículo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="my-5">
+        <h2 class="text-center mb-5 fw-bold">Testimonios <i class="fas fa-comments"></i></h2>
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card bg-secondary text-white mx-auto" style="width: 60%;">
+                        <div class="card-body text-center">
+                            <p class="card-text">"Dani es un desarrollador talentoso y comprometido."</p>
+                            <h5 class="card-title fw-bold">- Cliente 1</h5>
                         </div>
                     </div>
                 </div>
-                    <div class="col-md-5">
-                        <div class="card bg-secondary text-white mb-3 p-2">
-                            <img src="imgs/pythonvsjava_cover.png" class="card-img-top rounded" alt="Proyecto 1">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">BACKEND</h5>
-                                <p class="card-text">Python y Java</p>
-                            </div>
+                <div class="carousel-item">
+                    <div class="card bg-secondary text-white mx-auto" style="width: 60%;">
+                        <div class="card-body text-center">
+                            <p class="card-text">"Excelente trabajo y atención al detalle."</p>
+                            <h5 class="card-title fw-bold">- Cliente 2</h5>
                         </div>
                     </div>
-            </div>
-        </section>
-
-
-        <section id="experiencia" class="my-5">
-            <h2 class="text-center mb-5 fw-bold">Experiencia <i class="fas fa-wand-magic-sparkles"></i></h2>
-            <div class="list-group">
-                <div class="list-group-item list-group-item-action bg-secondary text-white p-4">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1 fw-bold">Experiencia en pŕacticas</h5>
-                        <small>17-03-2025</small>
-                    </div>
-                    <p class="mb-2">Experiencia como programador en las prácticas programadas por el instituto, en este caso, el IES Romero Vargas·</p>
-                    <a href="https://www·instagram·com/daniiinogaleees/" class="btn btn-primary">Leer más <i
-                            class="fas fa-angles-right"></i></a>
-                </div>
-                <div class="list-group-item list-group-item-action bg-secondary text-white p-4">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1 fw-bold">Experiencia en</h5>
-                        <small>18-06-2024</small>
-                    </div>
-                    <p class="mb-2">Trabajando, de manera no oficial, pero ayudando con temas de gestión de base de datos a una empresa de Jerez que la lleva un familiar mío.</p>
-                    <a href="https://www·instagram·com/daniiinogaleees/" class="btn btn-primary">Leer más <i
-                            class="fas fa-angles-right"></i></a>
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
 
-        <section id="sobremii" class="my-5">
-            <h2 class="text-center mb-5 fw-bold">Sobre mi <i class="fas fa-user"></i></h2>
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p>Me llamo Daniel Nogales pero me gusta que me llamen directamente Dani. Empecé estudiando bachillerato con las ganas de poder estudiar desarrollo web.</p>
-                    <p>Actualmente, estoy terminando el <abbr title="Ciclo Formativo de Grado Superior">CFGS</abbr> de <abbr title="Desarrollo de Aplicaciones Web">DAW</abbr> en Jerez de la Frontera, y estoy con más ganas que nunca de aprender más lenguajes y progresar tanto como en conocimientos, como en experiencia.
-                    </p>
-                    <p>Desde pequeño me ha apasionado este mundo, siempre he sido un amante de la informatica y de la
-                        mayoría de sus campos, por lo que me encanta todo este mundillo y estoy dispuesto a aprender y a
-                        seguir disfrutando.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="imgs/75476f9a-972f-44f1-b921-ab2c9420ad46.jpg" class="img-fluid rounded"
-                        alt="Foto de Dani">
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="my-5">
+        <h2 class="text-center mb-5 fw-bold">Contacto <i class="fas fa-envelope"></i></h2>
+        <div class="text-center">
+            <p>¿Interesado en trabajar juntos? ¡No dudes en contactarme!</p>
+            <a href="mailto:danielnogalesmateos2005@gmail.com" class="btn btn-outline-light">Enviar correo</a>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <span>© 2025 daninogales30· Casi todos los derechos reservados</span>
+            <span>© 2025 daninogales30. Todos los derechos reservados.</span>
             <ul class="list-inline mt-3">
                 <li class="list-inline-item"><a href="#proyectos" class="text-white">Proyectos</a></li>
                 <li class="list-inline-item"><a href="#experiencia" class="text-white">Experiencia</a></li>
-                <li class="list-inline-item"><a href="mailto:danielnogalesmateos2005@gmail·com"
-                        class="text-white">Contacto</a></li>
+                <li class="list-inline-item"><a href="#contacto" class="text-white">Contacto</a></li>
             </ul>
         </div>
     </footer>
 
-    <script src="https://cdn·jsdelivr·net/npm/bootstrap@5·3·0/dist/js/bootstrap·bundle·min·js"></script>
-    <script src="main·js"></script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html> 
+</html>
